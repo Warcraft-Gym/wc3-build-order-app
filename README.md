@@ -4,9 +4,10 @@ A simple app to create and share WC3 build orders.
 
 ## Build Node
 
-Local:
 * `npm install`
 * `npm install -g ts-node`
+
+Local:
 * `npm run start:dev`
 
 Prod:
@@ -15,9 +16,10 @@ Prod:
 
 ## Build Client
 
-Local:
 * `cd /src/client`
 * `npm install`
+
+Local:
 * `npm start`
 
 Prod:
