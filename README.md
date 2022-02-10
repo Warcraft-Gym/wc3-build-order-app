@@ -2,11 +2,28 @@
 
 A simple app to create and share WC3 build orders.
 
-## Build
+## Build Node
 
-For local development, run the server through `npm run start:dev`, 
-then navigate to the client and run it using `npm start`. 
-The client should automatically open in your browser.
+Local:
+* `npm install`
+* `npm install -g ts-node`
+* `npm run start:dev`
+
+Prod:
+* `npm run build`
+* `npm run start`
+
+## Build Client
+
+Local:
+* `cd /src/client`
+* `npm install`
+* `npm start`
+
+Prod:
+* `npm run build`
+* `npm install -g serve`
+* `serve -s build`
 
 You need to be running a mongodb instance locally.
 
@@ -18,4 +35,3 @@ If you want to contribute to this project, please create a pull request.
 Adding more "actions" (clickable Icons) can be accomplished by adding the 
 ActionCode enum in `src/client/src/store/common/types.ts` and adding ActionCodeDetails for this
 code in `src/client/src/store/common/actionCodes.ts - actionCodesToDetailsMap`.
-
